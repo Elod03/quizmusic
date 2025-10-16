@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = User::register($pseudo, $email, $password);
         
         if ($user) {
-            // ✅ Inscription réussie
+            // ✅ Inscription réussie 
             // 📚 CONCEPT : Connexion automatique après inscription
             // Pour améliorer l'expérience utilisateur
             $_SESSION['user_id'] = $user->getId();
