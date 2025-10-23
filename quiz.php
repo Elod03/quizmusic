@@ -18,10 +18,13 @@
 // Démarrage de la session
 session_start();
 
+
+
 // 📚 CONCEPT : Récupération de paramètres GET
 // $_GET est une variable superglobale qui contient les paramètres de l'URL
 // L'opérateur ?? (null coalescing) renvoie '' si $_GET['theme'] n'existe pas
 $theme = $_GET['theme'] ?? '';
+
 
 // 📚 CONCEPT : Validation des données d'entrée
 // TOUJOURS valider les données reçues de l'utilisateur !
